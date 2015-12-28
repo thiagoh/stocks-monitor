@@ -163,33 +163,35 @@
                     android:summaryOn="@string/hideStockSymbol"
                     android:title="@string/hideStockSymbol"/>
             </PreferenceScreen>
+
             <PreferenceScreen
                 android:key="update_schedule"
-                android:summary="Set widget update agendamento"
-                android:title="Atualize o agendamento">
+                android:summary="@string/updateSchedule"
+                android:title="@string/updateSchedule">
+
                 <ListPreference
                     android:defaultValue="1800000"
                     android:entries="@array/update_interval_entries"
                     android:entryValues="@array/update_interval_entryvalues"
                     android:key="update_interval"
-                    android:title="Update interval"/>
+                    android:title="@string/updateInterval"/>
 
                 <Preference
                     android:key="update_start"
                     android:summary="Time set: 00:00"
-                    android:title="Start update time"/>
+                    android:title="@string/startUpdateTime"/>
                 <Preference
                     android:defaultValue="23:59"
                     android:key="update_end"
                     android:summary="Time set: 23:59"
-                    android:title="Finish update time"/>
+                    android:title="@string/finishUpdateTime"/>
 
                 <CheckBoxPreference
                     android:defaultValue="true"
                     android:key="update_weekend"
-                    android:summaryOff="Update prices on the weekend"
-                    android:summaryOn="Update prices on the weekend"
-                    android:title="Weekend updates"/>
+                    android:summaryOff="@string/updatePricesOnTheWeekend"
+                    android:summaryOn="@string/updatePricesOnTheWeekend"
+                    android:title="@string/weekendUpdates"/>
             </PreferenceScreen>
 
 
@@ -338,24 +340,24 @@
         </PreferenceScreen>
         <PreferenceScreen
                 android:key="about_menu"
-                android:summary="Sobre Stocks"
-                android:title="Sobre">
+                android:summary="@string/aboutStocks"
+                android:title="@string/about">
             <Preference
                     android:enabled="false"
                     android:key="version"
-                    android:title="Stocks"/>
+                    android:title="@string/app_name"/>
             <Preference
                     android:key="rate_app"
-                    android:summary="Ajude Stocks com uma avaliação top"
-                    android:title="Avalie Stocks"/>
+                    android:summary="@string/helpAppTopEvaluation"
+                    android:title="@string/rateStocks"/>
             <Preference
                     android:key="change_history"
-                    android:summary="Visualize as mudanças desta versão"
-                    android:title="Mudanças recentes"/>
+                    android:summary="@string/viewChangelog"
+                    android:title="@string/changeLog"/>
             <Preference
                     android:key="about"
-                    android:summary="Visualize a licença"
-                    android:title="Licença"/>
+                    android:summary="@string/viewLicense"
+                    android:title="@string/license"/>
         </PreferenceScreen>
     </PreferenceCategory>
 

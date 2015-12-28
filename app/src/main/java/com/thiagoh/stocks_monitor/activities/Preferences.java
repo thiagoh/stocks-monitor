@@ -24,16 +24,6 @@
 
 package com.thiagoh.stocks_monitor.activities;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.concurrent.Callable;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import android.app.SearchManager;
 import android.app.TimePickerDialog;
 import android.content.Intent;
@@ -49,11 +39,22 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.widget.TimePicker;
 
+import com.google.android.gms.common.api.GoogleApiClient;
 import com.thiagoh.stocks_monitor.R;
 import com.thiagoh.stocks_monitor.util.Tools;
 import com.thiagoh.stocks_monitor.util.UserData;
 import com.thiagoh.stocks_monitor.util.Validator;
 import com.thiagoh.stocks_monitor.widget.WidgetBase;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+import java.util.concurrent.Callable;
 
 public class Preferences extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
 
@@ -491,6 +492,8 @@ public class Preferences extends PreferenceActivity implements SharedPreferences
 
 		configChangeHistory();
 
+		configUpdateInterval();
+
 		configUpdateStart();
 
 		configUpdateEnd();
@@ -667,6 +670,35 @@ public class Preferences extends PreferenceActivity implements SharedPreferences
 			}
 		});
 	}
+
+	private void configUpdateInterval() {
+		// Hook the Update preference to the Help activity
+		Preference updateInterval = findPreference("update_interval");
+
+		if (updateInterval == null) {
+			return;
+		}
+
+		updateInterval.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+
+			@Override
+			public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+				// Set the preference value
+				SharedPreferences preferences = getSharedPreferences();
+
+				SharedPreferences.Editor editor = preferences.edit();
+				editor.putString(preference.getKey(), String.valueOf(newValue));
+				editor.commit();
+
+				// Also update the UI
+				updateSummaries(getSharedPreferences(), preference.getKey());
+
+				return true;
+			}
+		});
+	}
+
 
 	private void configUpdateNow() {
 		// Hook the Update preference to the Help activity
@@ -957,5 +989,10 @@ public class Preferences extends PreferenceActivity implements SharedPreferences
 
 		Tools.alertWithCallback(this, getString(R.string.rate_stocks), getString(R.string.please_support_stocks), getString(R.string.rate),
 				getString(R.string.close), callable);
+	}
+
+	@Override
+	public void onStart() {
+		super.onStart();
 	}
 }

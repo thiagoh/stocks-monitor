@@ -1081,8 +1081,9 @@ public class WidgetBase extends AppWidgetProvider {
 
 		// If the elapsed time is greater than the interval, then update now
 		// otherwise, work out how much longer until the next update
-		if (elapsed > 0)
+		if (elapsed > 0) {
 			firstInterval = Math.max(interval - elapsed, 0);
+		}
 
 		// Set the manager up with the specified interval
 		Calendar calendar = Calendar.getInstance();

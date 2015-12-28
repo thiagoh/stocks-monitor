@@ -181,5 +181,18 @@
     <string name="total">Total:</string>
     <string name="holding">Holding:</string>
     <string name="removeSymbolAndClose">Remove symbol and close</string>
+    <string name="updateInterval">Update interval</string>
+    <string name="startUpdateTime">Start update time</string>
+    <string name="finishUpdateTime">Finish update time</string>
+    <string name="weekendUpdates">Weekend updates</string>
+    <string name="updatePricesOnTheWeekend">Update prices on the weekend</string>
+    <string name="updateSchedule">Update the schedule</string>
+    <string name="aboutStocks">About Stocks Monitor</string>
+    <string name="about">About</string>
+    <string name="helpAppTopEvaluation">Help Stocks Monitor with a top evaluation</string>
+    <string name="rateStocks">Rate Stocks Monitor</string>
+    <string name="viewChangelog">View the changelog of this version</string>
+    <string name="changeLog">Recente changelog</string>
+    <string name="viewLicense">View the license</string>
 
 </resources>
