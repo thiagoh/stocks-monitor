@@ -34,6 +34,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
+import com.thiagoh.stocks_monitor.util.Tools;
+import com.thiagoh.stocks_monitor.util.UserData;
+
 public class DataSource {
 
 	private static String mTimeStamp;

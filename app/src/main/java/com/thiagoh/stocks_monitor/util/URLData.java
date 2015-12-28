@@ -22,13 +22,12 @@
  THE SOFTWARE.
  */
 
-package com.thiagoh.stocks_monitor;
+package com.thiagoh.stocks_monitor.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
 
@@ -37,7 +36,9 @@ import org.slf4j.LoggerFactory;
 
 import android.content.Context;
 
-class URLData {
+import com.thiagoh.stocks_monitor.PreferenceCache;
+
+public class URLData {
 
 	/* URL data retrieval that supports caching */
 	public static String getURLData(Context context, String url, Integer ttl) {

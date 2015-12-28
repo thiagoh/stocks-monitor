@@ -11,7 +11,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 
-class PreferenceCache {
+import com.thiagoh.stocks_monitor.util.Tools;
+import com.thiagoh.stocks_monitor.util.Validator;
+
+public class PreferenceCache {
 
 	private static final Logger log = LoggerFactory.getLogger(PreferenceCache.class);
 

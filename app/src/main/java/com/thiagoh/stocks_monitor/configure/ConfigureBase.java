@@ -34,8 +34,8 @@ import android.view.KeyEvent;
 
 import com.thiagoh.stocks_monitor.DialogTools;
 import com.thiagoh.stocks_monitor.R;
-import com.thiagoh.stocks_monitor.Tools;
-import com.thiagoh.stocks_monitor.UserData;
+import com.thiagoh.stocks_monitor.util.Tools;
+import com.thiagoh.stocks_monitor.util.UserData;
 import com.thiagoh.stocks_monitor.widget.WidgetBase;
 
 import org.slf4j.Logger;

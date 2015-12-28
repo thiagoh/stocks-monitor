@@ -26,12 +26,14 @@ package com.thiagoh.stocks_monitor;
 
 import android.content.Context;
 
+import com.thiagoh.stocks_monitor.model.Company;
+import com.thiagoh.stocks_monitor.util.URLData;
+import com.thiagoh.stocks_monitor.util.Validator;
+
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 

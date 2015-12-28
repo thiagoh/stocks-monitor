@@ -22,7 +22,7 @@
  THE SOFTWARE.
  */
 
-package com.thiagoh.stocks_monitor;
+package com.thiagoh.stocks_monitor.activities;
 
 import java.text.NumberFormat;
 import java.text.ParseException;
@@ -58,8 +58,12 @@ import android.widget.SimpleAdapter;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.thiagoh.stocks_monitor.DataSource;
 import com.thiagoh.stocks_monitor.DataSource.StockField;
-import com.thiagoh.stocks_monitor.UserData.PortfolioField;
+import com.thiagoh.stocks_monitor.R;
+import com.thiagoh.stocks_monitor.util.Tools;
+import com.thiagoh.stocks_monitor.util.UserData;
+import com.thiagoh.stocks_monitor.util.UserData.PortfolioField;
 import com.thiagoh.stocks_monitor.widget.WidgetBase;
 
 public class Portfolio extends Activity {

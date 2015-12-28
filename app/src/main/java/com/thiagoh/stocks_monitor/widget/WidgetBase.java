@@ -54,11 +54,11 @@ import android.widget.RemoteViews;
 
 import com.thiagoh.stocks_monitor.DataSource;
 import com.thiagoh.stocks_monitor.DataSource.StockField;
-import com.thiagoh.stocks_monitor.Preferences;
+import com.thiagoh.stocks_monitor.activities.Preferences;
 import com.thiagoh.stocks_monitor.R;
-import com.thiagoh.stocks_monitor.Tools;
-import com.thiagoh.stocks_monitor.UserData;
-import com.thiagoh.stocks_monitor.UserData.PortfolioField;
+import com.thiagoh.stocks_monitor.util.Tools;
+import com.thiagoh.stocks_monitor.util.UserData;
+import com.thiagoh.stocks_monitor.util.UserData.PortfolioField;
 import com.thiagoh.stocks_monitor.Widget;
 
 

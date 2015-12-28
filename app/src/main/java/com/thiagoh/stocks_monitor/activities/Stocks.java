@@ -22,13 +22,15 @@
  THE SOFTWARE.
  */
 
-package com.thiagoh.stocks_monitor;
+package com.thiagoh.stocks_monitor.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.text.Html;
 import android.text.Spanned;
 import android.widget.TextView;
+
+import com.thiagoh.stocks_monitor.R;
 
 public class Stocks extends Activity {
 

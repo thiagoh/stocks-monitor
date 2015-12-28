@@ -22,7 +22,7 @@
  THE SOFTWARE.
  */
 
-package com.thiagoh.stocks_monitor;
+package com.thiagoh.stocks_monitor.activities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -36,7 +36,6 @@ import org.slf4j.LoggerFactory;
 
 import android.app.SearchManager;
 import android.app.TimePickerDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.net.Uri;
@@ -50,6 +49,10 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceScreen;
 import android.widget.TimePicker;
 
+import com.thiagoh.stocks_monitor.R;
+import com.thiagoh.stocks_monitor.util.Tools;
+import com.thiagoh.stocks_monitor.util.UserData;
+import com.thiagoh.stocks_monitor.util.Validator;
 import com.thiagoh.stocks_monitor.widget.WidgetBase;
 
 public class Preferences extends PreferenceActivity implements SharedPreferences.OnSharedPreferenceChangeListener {

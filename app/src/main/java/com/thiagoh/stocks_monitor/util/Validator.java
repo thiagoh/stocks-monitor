@@ -1,4 +1,4 @@
-package com.thiagoh.stocks_monitor;
+package com.thiagoh.stocks_monitor.util;
 
 /**
  * Created by thiago on 27/12/15.

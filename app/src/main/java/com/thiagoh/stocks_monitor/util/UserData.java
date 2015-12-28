@@ -22,7 +22,7 @@
  THE SOFTWARE.
  */
 
-package com.thiagoh.stocks_monitor;
+package com.thiagoh.stocks_monitor.util;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -43,7 +43,8 @@ import org.slf4j.LoggerFactory;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.preference.Preference;
+
+import com.thiagoh.stocks_monitor.R;
 
 public class UserData {
 

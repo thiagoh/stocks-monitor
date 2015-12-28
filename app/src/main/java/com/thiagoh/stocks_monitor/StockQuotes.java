@@ -32,6 +32,8 @@ import org.json.JSONObject;
 import android.content.Context;
 
 import com.thiagoh.stocks_monitor.DataSource.StockField;
+import com.thiagoh.stocks_monitor.util.Tools;
+import com.thiagoh.stocks_monitor.util.URLData;
 
 class StockQuotes {
 

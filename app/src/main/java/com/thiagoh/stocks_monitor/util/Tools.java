@@ -22,7 +22,7 @@
  THE SOFTWARE.
  */
 
-package com.thiagoh.stocks_monitor;
+package com.thiagoh.stocks_monitor.util;
 
 import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
@@ -40,11 +40,12 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
-import android.content.res.Resources.NotFoundException;
 import android.text.Html;
 import android.text.Spanned;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
+import com.thiagoh.stocks_monitor.R;
 
 public class Tools {
 

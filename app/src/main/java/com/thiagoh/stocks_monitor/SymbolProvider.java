@@ -32,7 +32,9 @@ import android.content.UriMatcher;
 import android.database.Cursor;
 import android.database.MatrixCursor;
 import android.net.Uri;
-import android.text.TextUtils;
+
+import com.thiagoh.stocks_monitor.model.Company;
+import com.thiagoh.stocks_monitor.util.Validator;
 
 import java.util.ArrayList;
 import java.util.List;

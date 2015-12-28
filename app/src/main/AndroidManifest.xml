@@ -38,7 +38,7 @@
         android:icon="@drawable/icon"
         android:label="@string/app_name">
         <activity
-            android:name="com.thiagoh.stocks_monitor.Stocks"
+            android:name=".activities.Stocks"
             android:configChanges="orientation"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Dialog">
@@ -48,7 +48,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.thiagoh.stocks_monitor.Portfolio"
+            android:name=".activities.Portfolio"
             android:configChanges="orientation"
             android:label="Portfolio"
             android:launchMode="singleInstance">
@@ -57,7 +57,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.thiagoh.stocks_monitor.Preferences"
+            android:name=".activities.Preferences"
             android:clearTaskOnLaunch="true"
             android:configChanges="orientation"
             android:finishOnTaskLaunch="true"
