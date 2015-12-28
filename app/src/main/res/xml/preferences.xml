@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The MIT License
+
+  Copyright (c) 2015 Thiago Andrade http://github.com/thiagoh/stocks
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:key="MainPreferences"
+                  android:summary="@string/preferences"
+                  android:title="@string/preferences">
+
+    <PreferenceCategory
+            android:key="widget_settings"
+            android:title="@string/widgetConfigs">
+
+
+
+
+        <PreferenceScreen
+            android:key="advanced"
+            android:summary="@string/advancedConfigs"
+            android:title="@string/advancedConfigs">
+
+
+            <PreferenceScreen
+                android:key="widget_views"
+                android:summary="@string/selectWhatWhatToView"
+                android:title="@string/widgetCols">
+
+
+
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="show_percent_change"
+                    android:summaryOff="@string/dailyVariationPercent"
+                    android:summaryOn="@string/dailyVariationPercent"
+                    android:title="@string/dailyVariationPercent"/>
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="show_absolute_change"
+                    android:summaryOff="@string/dailyVariation"
+                    android:summaryOn="@string/dailyVariation"
+                    android:title="@string/dailyVariation"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="show_portfolio_change"
+                    android:summaryOff="@string/portfolioTotalVariationPercent"
+                    android:summaryOn="@string/portfolioTotalVariationPercent"
+                    android:title="@string/portfolioTotalVariationPercent"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="show_portfolio_abs"
+                    android:summaryOff="@string/portfolioTotalVariation"
+                    android:summaryOn="@string/portfolioTotalVariation"
+                    android:title="@string/portfolioTotalVariation"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="show_portfolio_aer"
+                    android:summaryOff="@string/portfolioAnualVariation"
+                    android:summaryOn="@string/portfolioAnualVariation"
+                    android:title="@string/portfolioAnualVariation"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="show_profit_daily_change"
+                    android:summaryOff="@string/profitLossDailyChangePercentViewPercent"
+                    android:summaryOn="@string/profitLossDailyChangePercentViewPercent"
+                    android:title="@string/profitLossDailyChangePercentViewPercent"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="show_profit_daily_abs"
+                    android:summaryOff="@string/profitLossDailyChangePercentView"
+                    android:summaryOn="@string/profitLossDailyChangePercentView"
+                    android:title="@string/profitLossDailyChangePercentView"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="show_profit_change"
+                    android:summaryOff="@string/profitAndLossTotalChangePercent"
+                    android:summaryOn="@string/profitAndLossTotalChangePercent"
+                    android:title="@string/profitAndLossTotalChangePercent"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="show_profit_abs"
+                    android:summaryOff="Profit and loss total change view"
+                    android:summaryOn="Profit and loss total change view"
+                    android:title="P/L total change"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="show_profit_aer"
+                    android:summaryOff="Profit and loss annualised change view"
+                    android:summaryOn="Profit and loss annualised change view"
+                    android:title="P/L total change AER"/>
+
+            </PreferenceScreen>
+            <PreferenceScreen
+                android:key="appearance"
+                android:summary="@string/configWidgetAppearance"
+                android:title="@string/appearance">
+                <ListPreference
+                    android:defaultValue="transparent"
+                    android:entries="@array/background_entries"
+                    android:entryValues="@array/background_entryvalues"
+                    android:key="background"
+                    android:title="@string/widgetBackground"/>
+                <ListPreference
+                    android:defaultValue="normal"
+                    android:entries="@array/text_style_entries"
+                    android:entryValues="@array/text_style_entryvalues"
+                    android:key="text_style"
+                    android:title="@string/widgetTextStyle"/>
+                <ListPreference
+                    android:defaultValue="light"
+                    android:entries="@array/updated_colour_entries"
+                    android:entryValues="@array/updated_colour_entryvalues"
+                    android:key="updated_colour"
+                    android:title="Cor do rodapé"/>
+                <ListPreference
+                    android:defaultValue="visible"
+                    android:entries="@array/updated_display_entries"
+                    android:entryValues="@array/updated_display_entryvalues"
+                    android:key="updated_display"
+                    android:title="Visualizar rodapé"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="large_font"
+                    android:summaryOff="Use uma fonte maior"
+                    android:summaryOn="Use uma fonte maior"
+                    android:title="Use uma fonte maior"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="colours_on_prices"
+                    android:summaryOff="Use cores nos preços não nas variações"
+                    android:summaryOn="Use cores nos preços não nas variações"
+                    android:title="Use cores nos preços"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="short_time"
+                    android:summaryOff="Mostre a data mesmo com preços atualizados hoje"
+                    android:summaryOn="Mostre a data mesmo com preços atualizados hoje"
+                    android:title="Use a data completa"/>
+                <CheckBoxPreference
+                    android:defaultValue="false"
+                    android:key="hide_suffix"
+                    android:summaryOff="@string/hideStockSymbol"
+                    android:summaryOn="@string/hideStockSymbol"
+                    android:title="@string/hideStockSymbol"/>
+            </PreferenceScreen>
+            <PreferenceScreen
+                android:key="update_schedule"
+                android:summary="Set widget update agendamento"
+                android:title="Atualize o agendamento">
+                <ListPreference
+                    android:defaultValue="1800000"
+                    android:entries="@array/update_interval_entries"
+                    android:entryValues="@array/update_interval_entryvalues"
+                    android:key="update_interval"
+                    android:title="Update interval"/>
+
+                <Preference
+                    android:key="update_start"
+                    android:summary="Time set: 00:00"
+                    android:title="Start update time"/>
+                <Preference
+                    android:defaultValue="23:59"
+                    android:key="update_end"
+                    android:summary="Time set: 23:59"
+                    android:title="Finish update time"/>
+
+                <CheckBoxPreference
+                    android:defaultValue="true"
+                    android:key="update_weekend"
+                    android:summaryOff="Update prices on the weekend"
+                    android:summaryOn="Update prices on the weekend"
+                    android:title="Weekend updates"/>
+            </PreferenceScreen>
+
+
+        </PreferenceScreen>
+
+
+
+
+
+
+        <PreferenceScreen
+                android:key="stock_setup"
+                android:summary="@string/doWidgetConfigs"
+                android:title="@string/stocksConfigs">
+            <Preference
+                    android:defaultValue="PETR3.SA"
+                    android:key="Stock1"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock1"/>
+            <Preference
+                    android:defaultValue="PETR4.SA"
+                    android:key="Stock2"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock2"/>
+            <Preference
+                    android:defaultValue="BBAS3.SA"
+                    android:key="Stock3"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock3"/>
+            <Preference
+                    android:defaultValue="BBDC4.SA"
+                    android:key="Stock4"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock4"/>
+            <Preference
+                    android:defaultValue="ITUB4.SA"
+                    android:key="Stock5"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock5"/>
+            <Preference
+                    android:defaultValue="CIEL3.SA"
+                    android:key="Stock6"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock6"/>
+            <Preference
+                	android:defaultValue="ABEV3.SA"
+                    android:key="Stock7"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock7"/>
+            <Preference
+                    android:defaultValue="OIBR3.SA"
+                    android:key="Stock8"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock8"/>
+            <Preference
+                    android:defaultValue="OIBR4.SA"
+                    android:key="Stock9"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock9"/>
+            <Preference
+                    android:defaultValue="ELET3.SA"
+                    android:key="Stock10"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock10"/>
+            <Preference
+                    android:defaultValue="ELET6.SA"
+                    android:key="Stock11"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock11"/>
+            <Preference
+                    android:defaultValue="ANIM3.SA"
+                    android:key="Stock12"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock12"/>
+            <Preference
+                    android:key="Stock13"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock13"/>
+            <Preference
+                    android:key="Stock14"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock14"/>
+            <Preference
+                    android:key="Stock15"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock15"/>
+            <Preference
+                    android:key="Stock16"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock16"/>
+            <Preference
+                    android:key="Stock17"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock17"/>
+            <Preference
+                    android:key="Stock18"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock18"/>
+            <Preference
+                    android:key="Stock19"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock19"/>
+            <Preference
+                    android:key="Stock20"
+                    android:summary="@string/setSymbol"
+                    android:title="@string/stock20"/>
+        </PreferenceScreen>
+
+        <Preference
+                android:key="portfolio"
+                android:summary="@string/configStocksDetails"
+                android:title="@string/portfolio"/>
+        <Preference
+                android:key="update_now"
+                android:summary="@string/updatePricesAndBackToScreen"
+                android:title="@string/updatePricesNow"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/general">
+        <PreferenceScreen
+                android:key="help_menu"
+                android:summary="@string/viewHelpAndSupport"
+                android:title="@string/help">
+            <Preference
+                    android:key="help"
+                    android:summary="@string/helpWithAddStocks"
+                    android:title="@string/addingStocks"/>
+            <Preference
+                    android:key="help_usage"
+                    android:summary="@string/helpWithChoosingCols"
+                    android:title="@string/chooseCols"/>
+            <Preference
+                    android:key="help_portfolio"
+                    android:summary="Ajuda em configurar o portfólio"
+                    android:title="Using the portfolio"/>
+            <Preference
+                    android:key="help_prices"
+                    android:summary="Ajuda em atualizar os preços"
+                    android:title="Atualizando os preços"/>
+
+            <PreferenceCategory android:title="@string/contactUs">
+                <Preference
+                        android:key="feedback"
+                        android:summary="Vai iniciar seu aplicativo de e-mail"
+                        android:title="Suporte e feedback"/>
+            </PreferenceCategory>
+        </PreferenceScreen>
+        <PreferenceScreen
+                android:key="about_menu"
+                android:summary="Sobre Stocks"
+                android:title="Sobre">
+            <Preference
+                    android:enabled="false"
+                    android:key="version"
+                    android:title="Stocks"/>
+            <Preference
+                    android:key="rate_app"
+                    android:summary="Ajude Stocks com uma avaliação top"
+                    android:title="Avalie Stocks"/>
+            <Preference
+                    android:key="change_history"
+                    android:summary="Visualize as mudanças desta versão"
+                    android:title="Mudanças recentes"/>
+            <Preference
+                    android:key="about"
+                    android:summary="Visualize a licença"
+                    android:title="Licença"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

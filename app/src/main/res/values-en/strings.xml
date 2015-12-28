@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stocks Monitor</string>
+    <string name="close">Close</string>
+    <string name="impossible_start_email_client">Failed to use e-mail client</string>
+    <string name="loading_data">Loading data...</string>
+    <string name="rate">Rate!</string>
+    <string name="rate_stocks">Rate Stocks Monitor</string>
+    <string name="stocks_widget_added">Stocks Monitor Widget added</string>
+    <string name="symbolNotFound" formatted="false">Symbol \'%s\' wasn\'t found. Press to add it anyway</string>
+    <string name="toque_esquerda_widget_options">Press on the left side of the widget to access configurations</string>
+    <string name="disclaimer">The MIT License (MIT)<br /><br />Copyright © 2015 Thiago Andrade<br /><br />Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br /><br />The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br /><br />THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
+    <string name="update_help">You can set how often, and when the widget updates in the Advanced settings menu.  The setting applies globally to all the widgets.<br /><br />Stock price information is provided by Yahoo Finance, and there may be a delay (from real-time prices, to up to 30 minutes) for some exchanges.<br /><br />Note that the time in the lower-left of the widget is the time that the data was retrieved from Yahoo, not the time of the live price.<br /><br />If an internet connection is not present when an update occurs, the widget will just use the last shown data, and the time for that data.<br /><br /><b>Update prices now feature</b><br /><br />This will update the prices in all your widgets, if there is an internet connection available.</string>
+    <string name="help_usage">The widget has multiple views that display different information.<br /><br />These views can be turned on from the Widget views menu in settings.<br /><br />Once selected, the views can be changed on your home screen by touching the right-side of the widget.<br /><br />If a stock does not have information for a particular view, then the daily percentage change will instead be displayed for that stock in blue.<br /><br /><b>Daily change %%</b><br /><br />Shows the current stock price with the daily percentage change.<br /><br /><b>Daily change (DA)</b><br /><br />Shows the current stock price with the daily price change.<br /><br /><b>Total change %% (PF T%%)</b><br /><br />Shows the current stock price with the total percentage change from the buy price in the portfolio.<br /><br /><b>Total change (PF TA)</b><br /><br />Shows the current stock price with the total price change from the buy price in the portfolio.<br /><br /><b>Total change AER %% (PF AER)</b><br /><br />Shows the current stock price with the annualised percentage change using the buy price in the portfolio.<br /><br /><b>P/L daily change %% (P/L D%%)</b><br /><br />Shows your current holding value with the daily percentage change.<br /><br /><b>P/L daily change (P/L DA)</b><br /><br />Shows your current holding value with the daily price change.<br /><br /><b>P/L total change %% (P/L T%%)</b><br /><br />Shows your current holding value with the total percentage change from the buy cost in the portfolio.<br /><br /><b>P/L total change (P/L TA)</b><br /><br />Shows your current holding value with the total value change from the buy cost in the portfolio.<br /><br /><b>P/L total change AER (P/L AER)</b><br /><br />Shows your current holding value with the annualised percentage change using the buy cost in the portfolio.</string>
+    <string name="help_portfolio">On the portfolio screen you will see all the stocks that you have entered in your widgets in one list.<br /><br />You can touch an item to enter your stock purchase details.<br /><br /><b>Entering purchase details</b><br /><br />Enter the price that you bought the stock for, this will then be used for the Portfolio and Profit and loss widget views.<br /><br />The Date is optional, and will be used for the AER rate on the portfolio AER and profit and loss AER views.<br /><br />The Quantity is optional, and will be used to calculate your holdings for the profit and loss views.  You may use negative values to simulate a short position.<br /><br />The High price limit and Low price limit are optional.  When the current price hits these limits, the price color will change in the widget.<br /><br /><b>Removing purchase details</b><br /><br />To remove purchase and alert details, long press the portfolio item and then choose the Clear details option.</string>
+    <string name="help_enter_stocs"><b>Entering stock symbols</b><br /><br />Stock symbols must be in the Yahoo format, which you can look up on the Yahoo Finance website.</string>
+    <string name="choosing_short_interval_drain_battery">Note that choosing a short update interval may drain your battery faster.</string>
+    <string name="short_update_interval">Short update interval</string>
+    <string name="minutes">minutes</string>
+    <string name="one_hour">One hour</string>
+    <string name="three_hours">Three hours</string>
+    <string name="please_support_stocks"><![CDATA[Please help the stocks giving the app 5 star rating on the Android Market. <br /> <br /> motivation to keep improving the product and adding new features comes from positive feedback and evaluations.]]></string>
+    <string name="selected">Selected:</string>
+    <string name="selecting_widget_views">Selecting widget views</string>
+    <string name="using_portfolio">Using the portfolio</string>
+    <string name="app_description">Stocks Monitor is a widget that gives visibility the main stocks you want to track. Save your time with our
+        quick and simple widget. Monitor your stocks without delay. Simple like that!</string>
+    <string name="when_the_limits">When the limits are reached the share price will change color in the widget.</string>
+    <string name="change_log"><![CDATA[<i>If you enjoy this app please vote for 5 stars in Android Market!</i>.]]></string>
+    <string name="getting_started"><![CDATA[Note:. This is an application with vision only in widget <br /> <br /> <b> Started </b> <br /> <br /> First press and hold an empty space on your screen to bring up the menu <i> Add to the </i>. <br /> <br /> Then select the widgets option and finally select the item <i>Stocks Monitor</i> the widgets list. <br /> <br /> multiple widgets can be added. Each widget keeps its own data. <br /> <br /> <b>Press Home or Back to close this message.</b><br />]]></string>
+    <string name="impossible_start_email_client_description"><![CDATA[It was impossible to start the e-mail client automatically. <br /><br /> Our e-mail address to support and feedback is suporte e feedback é thiagoh@gmail.com]]></string>
+
+    <string-array name="background_entries">
+        <item>Solid</item>
+        <item>Transparent</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="background_entryvalues">
+        <item>Solid</item>
+        <item>Transparent</item>
+        <item>None</item>
+    </string-array>
+
+    <string-array name="updated_colour_entries">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Yellow</item>
+    </string-array>
+    <string-array name="updated_colour_entryvalues">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>Yellow</item>
+    </string-array>
+    <string-array name="updated_display_entries">
+        <item>Visible</item>
+        <item>Invisible</item>
+        <item>Remove</item>
+    </string-array>
+    <string-array name="updated_display_entryvalues">
+        <item>Visible</item>
+        <item>Invisible</item>
+        <item>Remove</item>
+    </string-array>
+
+    <string-array name="price_colour_entries">
+        <item>White</item>
+        <item>Gray</item>
+    </string-array>
+    <string-array name="price_colour_entryvalues">
+        <item>White</item>
+        <item>Gray</item>
+    </string-array>
+
+    <string-array name="text_style_entries">
+        <item>Normal</item>
+        <item>Bold</item>
+    </string-array>
+    <string-array name="text_style_entryvalues">
+        <item>Normal</item>
+        <item>Bold</item>
+    </string-array>
+
+    <string-array name="update_interval_entries">
+        <item>5 minutes</item>
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>One hour</item>
+        <item>Three hours</item>
+        <item>Daily</item>
+    </string-array>
+
+    <string-array name="update_interval_entryvalues">
+        <item>300000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>10800000</item>
+        <item>86400000</item>
+    </string-array>
+    <string name="daily">Daily</string>
+    <string name="highAlert">High alert:</string>
+    <string name="lowAlert">Low alert:</string>
+    <string name="noDescription">No description</string>
+    <string name="license">License</string>
+    <string name="widgetConfigs">Widget configs</string>
+    <string name="doWidgetConfigs">Stock configs</string>
+    <string name="stocksConfigs">Stock configs</string>
+    <string name="setSymbol">Set symbol</string>
+    <string name="stock">Stock</string>
+
+    <string name="stock1">Stock 1</string>
+    <string name="stock2">Stock 2</string>
+    <string name="stock3">Stock 3</string>
+    <string name="stock4">Stock 4</string>
+    <string name="stock5">Stock 5</string>
+    <string name="stock6">Stock 6</string>
+    <string name="stock7">Stock 7</string>
+    <string name="stock8">Stock 8</string>
+    <string name="stock9">Stock 9</string>
+    <string name="stock10">Stock 10</string>
+    <string name="stock11">Stock 11</string>
+    <string name="stock12">Stock 12</string>
+    <string name="stock13">Stock 13</string>
+    <string name="stock14">Stock 14</string>
+    <string name="stock15">Stock 15</string>
+    <string name="stock16">Stock 16</string>
+    <string name="stock17">Stock 17</string>
+    <string name="stock18">Stock 18</string>
+    <string name="stock19">Stock 19</string>
+    <string name="stock20">Stock 20</string>
+    <string name="stock21">Stock 21</string>
+    <string name="stock22">Stock 22</string>
+    <string name="stock23">Stock 23</string>
+    <string name="stock24">Stock 24</string>
+    <string name="stock25">Stock 25</string>
+    <string name="stock26">Stock 26</string>
+    <string name="stock27">Stock 27</string>
+    <string name="stock28">Stock 28</string>
+    <string name="stock29">Stock 29</string>
+    <string name="stock30">Stock 30</string>
+    <string name="preferences">Preferences</string>
+    <string name="addingStocks">Entering stocks</string>
+    <string name="updatingPrices">Updating prices</string>
+    <string name="andClose">and close</string>
+    <string name="use">Use </string>
+    <string name="configs">Configurations</string>
+    <string name="selectWhatWhatToView">Choose what you want to see</string>
+    <string name="widgetCols">Widget columns</string>
+    <string name="dailyVariation">Daily variation</string>
+    <string name="dailyVariationPercent">Daily variation %</string>
+    <string name="portfolioTotalVariation">Portfolio total variarion</string>
+    <string name="portfolioTotalVariationPercent">Portfolio total variarion %</string>
+    <string name="portfolioAnualVariation">Anual portfolio variation</string>
+    <string name="advancedConfigs">Advanced Configs</string>
+    <string name="profitLossDailyChangePercentView">Profit and loss daily change</string>
+    <string name="profitLossDailyChangePercentViewPercent">Profit and loss daily change %</string>
+    <string name="profitAndLossTotalChange">Profit and loss total change</string>
+    <string name="profitAndLossTotalChangePercent">Profit and loss total change %</string>
+    <string name="configStocksDetails">Config your stocks details</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="updatePricesAndBackToScreen">Update prices and back to main screen</string>
+    <string name="updatePricesNow">Update prices now</string>
+    <string name="general">General</string>
+    <string name="help">Help</string>
+    <string name="viewHelpAndSupport">Help and support options</string>
+    <string name="helpWithAddStocks">Help with adding stocks</string>
+    <string name="helpWithChoosingCols">Help with choosing columns</string>
+    <string name="chooseCols">Choose columns</string>
+    <string name="contactUs">Contact us</string>
+    <string name="configWidgetAppearance">Config the appearance</string>
+    <string name="appearance">Appearance</string>
+    <string name="widgetBackground">Widget background</string>
+    <string name="widgetTextStyle">Widget text style</string>
+    <string name="hideStockSymbol">Hide the stocks symbol</string>
+    <string name="searchSymbols">Search symbols</string>
+    <string name="buyPrice">Buy price:</string>
+    <string name="buyDate">Buy date:</string>
+    <string name="quantity">Quantity:</string>
+    <string name="price">Price:</string>
+    <string name="lastChange">Last ch:</string>
+    <string name="total">Total:</string>
+    <string name="holding">Holding:</string>
+    <string name="removeSymbolAndClose">Remove symbol and close</string>
+
+</resources>

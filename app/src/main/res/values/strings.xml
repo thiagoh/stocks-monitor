@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  The MIT License
+
+  Copyright (c) 2015 Thiago Andrade http://thiagoh.github.io/stocks
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+  -->
+
+<resources>
+    <string name="app_name">Monitor de Ações</string>
+    <string name="when_the_limits">Quando os limites forem atingidos o preço da ação vai mudar de cor no widget.</string>
+    <string name="change_log"><![CDATA[<i>Se você apreciar este aplicativo por favor vote em 5 estrelas no Android Market!</i>.]]></string>
+    <string name="getting_started"><![CDATA[Nota: Este é um aplicativo com visão somente em widget.<br /><br /><b>Iniciando</b><br /><br />
+				Primeiro pressione e segure um espaço vazio na sua tela para trazer o menu <i>Adicionar à página</i>.<br /><br />
+				Depois selecione a opção Widgets e finalmente selecione o item <i>Monitor de Ações</i> da lista de widgets.<br /><br />
+				Vários widgets podem ser adicionados. Cada widget guarda seus próprios dados.<br /><br />
+				<b>Pressione Início ou Voltar para fechar esta mensagem.</b><br />]]></string>
+    <string name="stocks_widget_added">Widget Monitor de Ações adicionado</string>
+    <string name="toque_esquerda_widget_options">Toque do lado esquerdo do widget para acessar as configurações</string>
+    <string name="email_address_to" translatable="false">thiagoh@gmail.com</string>
+    <string name="close">Fechar</string>
+    <string name="rate_stocks">Avalie o Monitor de Ações</string>
+    <string name="rate">Avalie!</string>
+    <string name="loading_data">Carregando dados...</string>
+    <string
+        name="please_support_stocks"><![CDATA[Por favor, ajude o Monitor de Ações dando ao aplicativo 5 estrelas de avaliação no Android Market.<br /><br />Motivação para continuar a melhorar o produto e adicionar novas funcionalidades vem de um feedback positivo e avaliações.]]></string>
+    <string name="impossible_start_email_client">Falha ao iniciar o cliente de e-mail</string>
+    <string name="impossible_start_email_client_description"><![CDATA[Não foi possível iniciar o cliente de E-mail automaticamente.<br /><br />Nosso endereço de e-mail para suporte e feedback é thiagoh@gmail.com]]></string>
+
+    <string-array name="background_entries">
+        <item>Sólido</item>
+        <item>Transparente</item>
+        <item>Nenhum</item>
+    </string-array>
+    <string-array name="background_entryvalues">
+        <item>sólido</item>
+        <item>transparente</item>
+        <item>nenhum</item>
+    </string-array>
+
+    <string-array name="updated_colour_entries">
+        <item>Claro</item>
+        <item>Escuro</item>
+        <item>Amarelo</item>
+    </string-array>
+    <string-array name="updated_colour_entryvalues">
+        <item>claro</item>
+        <item>escuro</item>
+        <item>amarelo</item>
+    </string-array>
+
+    <string-array name="updated_display_entries">
+       <item>Visível</item>
+        <item>Invisível</item>
+        <item>Remover</item>
+    </string-array>
+    <string-array name="updated_display_entryvalues">
+        <item>visível</item>
+        <item>invisível</item>
+        <item>remover</item>
+    </string-array>
+
+    <string-array name="price_colour_entries">
+        <item>Branco</item>
+        <item>Cinza</item>
+    </string-array>
+    <string-array name="price_colour_entryvalues">
+        <item>branco</item>
+        <item>cinza</item>
+    </string-array>
+
+    <string-array name="text_style_entries">
+        <item>Normal</item>
+        <item>Negrito</item>
+    </string-array>
+    <string-array name="text_style_entryvalues">
+        <item>normal</item>
+        <item>negrito</item>
+    </string-array>
+
+    <string-array name="update_interval_entries">
+        <item>5 minutos</item>
+        <item>15 minutos</item>
+        <item>30 minutos</item>
+        <item>Uma hora</item>
+        <item>Três horas</item>
+        <item>Diariamente</item>
+    </string-array>
+
+    <string-array name="update_interval_entryvalues">
+        <item>300000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>10800000</item>
+        <item>86400000</item>
+    </string-array>
+
+    <string name="symbolNotFound">Símbolo \'%s\' não foi encontrado. Pressione para adicionar de qualquer forma.
+    </string>
+    <string name="disclaimer">The MIT License (MIT)<br /><br />Copyright © 2015 Thiago Andrade<br /><br />Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br /><br />The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br /><br />THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</string>
+    <string name="update_help">Você pode definir a freqüência, e quando as atualizações de widgets no menu de configurações avançadas. A definição aplica-se globalmente para todos os widgets. </string>
+    <string name="help_usage">O widget tem múltiplas visões que exibem informações diferentes. </string>
+    <string name="help_portfolio">Na tela da carteira você vai ver todas as ações que você introduziu em seus widgets em uma lista. </string>
+    <string name="help_enter_stocs"><b> Introduzir símbolos de ações </b> <br /> <br /> símbolos de Stock deve estar no formato Yahoo, que você pode procurar no site do Yahoo Finance.</string>
+    <string name="choosing_short_interval_drain_battery">Note-se que a escolha de um curto intervalo de atualização pode esgotar a bateria mais rapidamente.</string>
+    <string name="short_update_interval">Intervalo de atualização curto</string>
+    <string name="minutes">minutos</string>
+    <string name="one_hour">Uma hora</string>
+    <string name="three_hours">Três horas</string>
+    <string name="daily">Diariamente</string>
+    <string name="selected">Selecionado:</string>
+    <string name="selecting_widget_views">Selecionando views do widget</string>
+    <string name="using_portfolio">Usando o portfolio</string>
+    <string name="app_description">Monitor de Açoes é um widget que dá visibilidade as principais ações que você deseja acompanhar.
+        Economize tempo com o nosso widget simples e rápido. Monitore seus papeis sem demora. Simples assim!</string>
+    <string name="highAlert">Alerta de alta:</string>
+    <string name="lowAlert">Alerta de baixa:</string>
+    <string name="noDescription">Sem descrição</string>
+    <string name="license">Licença</string>
+    <string name="widgetConfigs">Configurações do widget</string>
+    <string name="doWidgetConfigs">Configure as ações</string>
+    <string name="stocksConfigs">Configurações de ações</string>
+    <string name="setSymbol">Configure símbolo</string>
+    <string name="stock">Ação</string>
+    <string name="stock1">Ação 1</string>
+    <string name="stock2">Ação 2</string>
+    <string name="stock3">Ação 3</string>
+    <string name="stock4">Ação 4</string>
+    <string name="stock5">Ação 5</string>
+    <string name="stock6">Ação 6</string>
+    <string name="stock7">Ação 7</string>
+    <string name="stock8">Ação 8</string>
+    <string name="stock9">Ação 9</string>
+    <string name="stock10">Ação 10</string>
+    <string name="stock11">Ação 11</string>
+    <string name="stock12">Ação 12</string>
+    <string name="stock13">Ação 13</string>
+    <string name="stock14">Ação 14</string>
+    <string name="stock15">Ação 15</string>
+    <string name="stock16">Ação 16</string>
+    <string name="stock17">Ação 17</string>
+    <string name="stock18">Ação 18</string>
+    <string name="stock19">Ação 19</string>
+    <string name="stock20">Ação 20</string>
+    <string name="stock21">Ação 21</string>
+    <string name="stock22">Ação 22</string>
+    <string name="stock23">Ação 23</string>
+    <string name="stock24">Ação 24</string>
+    <string name="stock25">Ação 25</string>
+    <string name="stock26">Ação 26</string>
+    <string name="stock27">Ação 27</string>
+    <string name="stock28">Ação 28</string>
+    <string name="stock29">Ação 29</string>
+    <string name="stock30">Ação 30</string>
+    <string name="preferences">Preferências</string>
+    <string name="addingStocks">Adicionar ações</string>
+    <string name="updatingPrices">Atualizando preços</string>
+    <string name="andClose">e fechar</string>
+    <string name="use">Usar</string>
+    <string name="configs">Configurações</string>
+    <string name="selectWhatWhatToView">Selecione o que deseja vizualizar</string>
+    <string name="widgetCols">Colunas do widget</string>
+    <string name="dailyVariation">Variação dirária</string>
+    <string name="dailyVariationPercent">Variação dirária %</string>
+    <string name="portfolioTotalVariation">Variação total do portfólio</string>
+    <string name="portfolioTotalVariationPercent">Variação total do portfólio %</string>
+    <string name="portfolioAnualVariation">Variação anualizada do portfólio</string>
+    <string name="profitLossDailyChangePercentView">Variação diária de ganhos e perdas</string>
+    <string name="profitLossDailyChangePercentViewPercent">Variação diária de ganhos e perdas %</string>
+    <string name="advancedConfigs">Configurações avançadas</string>
+    <string name="profitAndLossTotalChange">Variação total de perdas e ganhos</string>
+    <string name="profitAndLossTotalChangePercent">Variação total de perdas e ganhos %</string>
+    <string name="configStocksDetails">Configure os detalhes das suas ações</string>
+    <string name="portfolio">Portfólio</string>
+    <string name="updatePricesAndBackToScreen">Atualize os preços e retorne para a tela</string>
+    <string name="updatePricesNow">Atualizar os preços agora</string>
+    <string name="general">Geral</string>
+    <string name="help">Ajuda</string>
+    <string name="viewHelpAndSupport">Visualizar a ajuda e opções de suporte</string>
+    <string name="helpWithAddStocks">Ajuda em adicionar ações</string>
+    <string name="helpWithChoosingCols">Ajuda em selecionar colunas</string>
+    <string name="chooseCols">Selecionar colunas do widget</string>
+    <string name="contactUs">Contate-nos</string>
+    <string name="configWidgetAppearance">Configure a aparência do widget</string>
+    <string name="appearance">Aparência</string>
+    <string name="widgetBackground">Fundo de tela do Widget</string>
+    <string name="widgetTextStyle">Estilo do texto do Widget</string>
+    <string name="hideStockSymbol">Esconda o código da ação</string>
+    <string name="searchSymbols">Procurar ações</string>
+    <string name="buyPrice">Buy price:</string>
+    <string name="buyDate">Buy date:</string>
+    <string name="quantity">Quantity:</string>
+    <string name="price">Price:</string>
+    <string name="lastChange">Last ch:</string>
+    <string name="total">Total:</string>
+    <string name="holding">Mantendo:</string>
+    <string name="removeSymbolAndClose">Remove symbol and close</string>
+
+</resources>
